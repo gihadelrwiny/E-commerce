@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="Ecomm Api/Ecomm Api.csproj" />
+    <Project Path="EcommCore/EcommCore.csproj" />
+    <Project Path="EcommInfrastrure/EcommInfrastrure.csproj" />
+  </Folder>
+</Solution>
