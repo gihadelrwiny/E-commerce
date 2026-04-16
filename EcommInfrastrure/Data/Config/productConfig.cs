@@ -17,7 +17,7 @@ namespace EcommInfrastrure.Data.Config
             builder.HasData(
                 new Product
                 {
-                    id = 1,
+                    Id = 1,
                     Name = "Product 1",
                     Description = "Description for Product 1",
                     price = 10.99m,

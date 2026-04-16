@@ -8,6 +8,6 @@ namespace EcommCore.Entites
 {
     public class Baseentity <T>
     {
-        public T id { get; set; }
+        public T Id { get; set; }
     }
 }

@@ -14,9 +14,9 @@ namespace EcommInfrastrure.Data.Config
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Category> builder)
         {
            builder.Property(c => c.Name).IsRequired().HasMaxLength(50);
-            builder.Property(c => c.id).IsRequired();
+            builder.Property(c => c.Id).IsRequired();
             builder.HasData(
-                new Category { id = 1, Name = "Electronics", Description = "Electronic devices and gadgets" }
+                new Category { Id = 1, Name = "Electronics", Description = "Electronic devices and gadgets" }
                
             );
         }

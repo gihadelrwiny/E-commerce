@@ -1,4 +1,5 @@
 
+using Ecomm_Api.Mapping;
 using EcommInfrastrure;
 
 namespace Ecomm_Api
@@ -16,6 +17,10 @@ namespace Ecomm_Api
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.infrastructureConfiguration(builder.Configuration);
+            builder.Services.AddAutoMapper(cfg =>
+            {
+                cfg.AddMaps(typeof(CategoryMappingcs).Assembly);
+            });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
